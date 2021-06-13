@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  ingram_devops:
+    build: .
+    container_name: ingram_devops
+    volumes: 
+        - ./volume:/home/ingram
+    entrypoint: "python geoip.py dns.txt"
