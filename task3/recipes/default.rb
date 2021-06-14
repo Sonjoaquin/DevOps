@@ -12,5 +12,5 @@ execute 'Script download' do
 end
 
 execute 'Execute script' do
-    command 'python geoip.py'
+    command 'cd geoiplookup && python geoip.py dns.txt'
 end
